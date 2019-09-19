@@ -16,7 +16,7 @@ function App() {
       <Nav user={user} />
       <Router>
         <Channel path="channel/:channelID" user={user} />
-        <Redirect from="/" to="channel/general" />
+        <Redirect from="/" to="channel/general" noThrow/>
       </Router>
     </div>
   ) : (
